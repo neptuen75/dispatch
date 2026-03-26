@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>차량배차현황</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>차량배차현황표</h2>
+
+<form id="form">
+  <input type="date" id="date" required>
+  <input type="text" id="manager" placeholder="현장담당자">
+  <input type="text" id="site" placeholder="현장명">
+  <input type="text" id="location" placeholder="상/하차지">
+  <input type="text" id="vehicleType" placeholder="차량종류">
+  <input type="number" id="pallet" placeholder="파렛트수량">
+  <input type="number" id="vehicleCount" placeholder="차량수">
+  <input type="text" id="note" placeholder="비고">
+  <button type="submit">저장</button>
+</form>
+
+<button onclick="window.print()">인쇄</button>
+
+<table>
+<thead>
+<tr>
+<th>일자</th><th>현장담당자</th><th>현장명</th><th>상/하차지</th>
+<th>차량종류</th><th>파렛트수량</th><th>차량수</th><th>비고</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
